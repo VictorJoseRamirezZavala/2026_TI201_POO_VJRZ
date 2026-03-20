@@ -1,4 +1,5 @@
 package tema2clasesyobjetos;
+
 /*
  * 2026 ITESS.TICS
  * Periodo Enero-Junio
@@ -10,18 +11,21 @@ package tema2clasesyobjetos;
  *Fecha: 20/02/2026
  */
 public class Automovil {
+
     private String marca;
     private String modelo;
     private String cilindros;
+
+    Automovil() {
+        marca = "x";
+        modelo = "y";
+        cilindros = "0 cc";
+    }
 
     public Automovil(String marca, String modelo, String cilindros) {
         this.marca = marca;
         this.modelo = modelo;
         this.cilindros = cilindros;
-    }
-
-    Automovil() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getMarca() {
@@ -52,7 +56,5 @@ public class Automovil {
     public String toString() {
         return "Automovil{" + "marca=" + marca + ", modelo=" + modelo + ", cilindros=" + cilindros + '}';
     }
-    
-    
 
 }
