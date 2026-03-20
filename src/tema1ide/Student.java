@@ -8,14 +8,25 @@
  *Intento de programador: VJRZ
  *Fecha: 09/02/2026
  */
-
 package tema1ide;
 
 public class Student {
+
+    public Student(String tI25110104, String victor, String tiCs, String male) {
+        this.controlNumber = "";
+        this.name = "";
+        this.career = "";
+        this.gender = "";
+    }
+
     private String controlNumber;
     private String name;
     private String career;
     private String gender;
+
+    Student() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 
     public String getControlNumber() {
         return controlNumber;
@@ -53,6 +64,6 @@ public class Student {
     public String toString() {
         return "Student{" + "controlNumber=" + controlNumber + ", name=" + name + ", career=" + career + ", gender=" + gender + '}';
     }
-    
-    
+
+
 }
