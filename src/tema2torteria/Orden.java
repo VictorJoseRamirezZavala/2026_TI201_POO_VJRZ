@@ -1,5 +1,16 @@
 package tema2torteria;
 
+/*
+ * 2026 ITESS.TICS
+ * Periodo Enero-Junio
+ *Asignatura: Programacion orientada a objetos
+ *Docente: Francisco Javier Montecillo Puente
+ *Descripción: Tema 2. Clases y objetos
+ *             Aplicación ejemplo de modelar objetos para una tortería
+ *Intento de programador: VJRZ
+ *Fecha: 20/04/2026
+ */
+
 public class Orden {
 
     private Pedido pedido;
