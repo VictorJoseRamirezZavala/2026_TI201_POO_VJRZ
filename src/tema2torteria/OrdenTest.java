@@ -12,20 +12,25 @@ package tema2torteria;
  *Fecha: 21/04/2026
  */
 
-public class TortaTest {
+public class OrdenTest {
 
     public static void main(String[] args) {
-        //provar el constric
-        Torta tortConstructorDefault = new Torta();
 
         try {
-            tortConstructorDefault.agregarIngrediente("Jamon");
-            tortConstructorDefault.agregarIngrediente("Queso");
-            tortConstructorDefault.agregarIngrediente("Lechuga");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+            Usuario u = new Usuario("Victor");
 
-        System.out.println(tortConstructorDefault.toString());
+            Torta t = new Torta();
+            t.setNombre("Cubana");
+            t.setPrecio(60);
+
+            Pedido p = new Pedido(u, t);
+
+            Orden o = new Orden(p, 1, true, "cocina");
+
+            System.out.println(o);
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
     }
 }

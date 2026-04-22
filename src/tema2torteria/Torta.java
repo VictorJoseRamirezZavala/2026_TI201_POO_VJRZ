@@ -24,7 +24,7 @@ public class Torta {
         numeroIngredientes = 0;
     }
 
-    public Torta(String nombre, int pre, String[] ingredientes, float precio) {
+    public Torta(String nombre, String[] ingredientes, float precio) {
         this.nombre = nombre;
         //copiar los ingredientes de entrada a mi liosta de ingredientes
         this.numeroIngredientes = ingredientes.length;
@@ -34,7 +34,14 @@ public class Torta {
 
         //this.ingredientes = ingredientes;
         this.precio = precio;
+        
+        
     }
+    
+    public Torta(String nombre) {
+    this();
+    this.nombre = nombre;
+}
 
     public String getNombre() {
         return nombre;
@@ -74,7 +81,7 @@ public class Torta {
                 + numeroIngredientes +
                 ", precio=" + precio + '}';
     }
-    public void agregarIngredientes(String ingrediente) throws Exception{
+    public void agregarIngrediente(String ingrediente) throws Exception{
         if(numeroIngredientes >= MAX_INGREDIENTES){
             System.out.print("Solo Puedes agregar 10 ingredientes!! ya tienes 10 ingredientes");
             throw new Exception("maxima cantidad de ingredeientes");
